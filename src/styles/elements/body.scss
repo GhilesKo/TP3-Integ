@@ -44,7 +44,7 @@ justify-content: space-between;
 
 body {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 15% 85%;
 margin: 0px;
     padding: 0px;
     background-color: #ededed;
@@ -79,12 +79,23 @@ menu{
     display: flex;
     align-items: center;
 gap: 15px;
-    justify-content: center;
+
 
     h5{color: white;
-    font-family: "Roboto", sans-serif;
-    margin-top: 5px}
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        margin-top: 5px}
 
+}
+.userSectionContenu{
+display: flex;
+    gap:13px;
+    margin-left: 30px;
+}
+.graphContributeurs{
+
+    margin-bottom: -20px;
+    margin-left: 65px;
 }
 .menuSection{
 
@@ -101,10 +112,12 @@ gap: 15px;
 
     h5{color: white;
         font-family: "Roboto", sans-serif;
+        font-weight: 400;
         margin-top: 4px;
+        font-size: 20px;
        }
     i{
-        font-size: 27px;
+        font-size: 24px;
 
 
     }
@@ -126,8 +139,8 @@ margin-top: 20px;
 
     .selectedItem{
 
-       font-weight: 700;
-        font-size: 30px;
+       font-weight: 500;
+        font-size: 25px;
 
 
     }
@@ -189,6 +202,7 @@ margin-top: 20px;
 }
 
 .cercleIcon{
+    margin-top: -25px;
 
     width: 50px;
     height: 50px;
@@ -233,7 +247,7 @@ bottom: 125px;
     .cardNumber{
         font-family: 'Roboto', sans-serif;
         color: #5E5CD3;
-        font-weight: 700;
+        font-weight: 500;
         margin-top: 6px;
         font-size: 26px;
 
@@ -256,22 +270,28 @@ bottom: 125px;
 
 
 }
+.priceRedNumber{
+    font-weight: bold;
+    color: red;
+
+}
 .avancement{
 
     width: 46px;
-    height: 11px;
-    border-radius: 10px;
+    height: 13px;
+    border-radius: 10px 0px 0px 10px;
     background-color: #79D48D;
-    margin-top: -11px;
+    margin-top: -13px;
 
 }
 .barreAvancement{
 
-    width: 96px;
-    height: 11px;
+    width: 95px;
+    height: 13px;
     border-radius: 10px;
     background-color: #d3d3d3;
-    margin-top: 30px;
+    margin-top: 39px;
+    margin-right: 10px;
 
 }
 .rowInfo{
@@ -279,7 +299,7 @@ bottom: 125px;
 }
 
 .infoBottom{
-
+    width: 80%;
 margin-left: 25px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
