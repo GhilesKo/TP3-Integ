@@ -320,3 +320,48 @@ tableHeader{
     display: flex;
 
 }
+.titleCalendarRow{
+    display: grid;
+    grid-template-columns: 25% 42% 33%;
+    align-items: center;
+    justify-content: center;
+
+    h4{
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+}
+.boiteDate{
+
+    height: 26px;
+    width: 110px;
+    padding: 5px;
+    border: 2px solid #B1B1B1;
+    border-radius: 2.66667px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-right: 5px;
+    justify-self: end;
+
+
+
+    span{
+
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        color: #696363;
+        margin-top: 6px;
+
+
+    }
+    i{
+        margin-bottom: 4px;
+        margin-top: 4px;
+    }
+
+}
