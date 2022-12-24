@@ -1,0 +1,322 @@
+.rowSelectors{
+
+    width: 88%;
+    display: flex;
+    justify-content: end;
+gap: 7px;
+
+}
+
+.Suivi{
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: -10px;
+
+}
+.dateSelector{
+
+    height: 30px;
+    width: 160px;
+    background-color: #d7d7d7;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+}
+.statusSelector{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 30px;
+    width: 160px;
+    background-color: #D7D7D7;
+    border-radius: 7px;
+
+
+
+}
+
+.buttonBox{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    span{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+
+    }
+
+
+}
+
+.exportButton{
+
+    width: 44px;
+    height: 30px;
+    background-color: #D7D7D7;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+    align-items: center;
+    i:hover{
+        color: #8a508b;
+
+
+    }
+}
+.iconE{
+
+    margin-left: 3px;
+
+}
+
+.content{
+    padding: 0 25px;
+    width: 86.5%;
+    margin-left: 40px;
+    height: auto;
+    background-color: #e3dce3;
+    border-radius: 16px;
+    margin-top: 10px;
+
+    span{
+
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+
+}
+
+.contentRow{
+
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    padding-left:60px;
+    padding-right: 100px;
+    padding-top: 20px;
+
+    span{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+
+    }
+}
+
+
+
+
+
+.rowContenu{
+    display: flex;
+
+
+}
+
+.buttonArrow{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.contentBox{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    margin-top: 20px;
+
+
+}
+.boiteContenu{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 50px;
+
+}
+
+
+.boiteIcone{
+    filter: drop-shadow(0px 4.63158px 4.63158px rgba(0, 0, 0, 0.25));
+    height: 44px;
+    width: 44px;
+    background-color: white;
+    border: 1.15789px solid #81638E;
+    border-radius: 25px;
+    object-fit: cover;
+
+
+}
+.user{
+gap: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statusBox{
+
+    background-color: #E3F8DC;
+    width: 79px;
+    height: 23px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+.statusYellowBox{
+
+    background-color: #f6e8d7;
+    width: 79px;
+    height: 23px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+
+.boiteTr{
+
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+th{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+}
+td:first-child {
+
+    border-top-left-radius:11px;
+    border-bottom-left-radius:11px;
+}
+
+td:last-child {
+    border-bottom-right-radius:11px;
+    border-top-right-radius:11px;
+}
+tr{
+    border-radius: 11px;
+
+}
+td{
+    padding: 10px;
+}
+
+
+
+.statusTexte{
+
+    color: #527C43;
+}
+.statusYellowTexte{
+
+    color: #8D6A4A;
+
+}
+.statusRedTexte{
+
+    color: #864242;
+
+}
+.statusRedBox{
+
+    background-color: #FFD6D6;
+    width: 79px;
+    height: 23px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.montant{
+
+    font-size: 22px;
+
+
+
+}
+
+
+table{
+width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+
+}
+
+td{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+tableHeader{
+     display: flex;
+        justify-content: space-between;
+
+
+
+}
+
+.date{
+
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.pageBox{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-family: 'Roboto', sans-serif;
+    }
+
+}
+.selectedPage{
+
+ font-size: 16px;
+    font-weight: bolder;
+    display: flex;
+
+}
