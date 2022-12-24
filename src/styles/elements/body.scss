@@ -5,152 +5,132 @@
    ========================================================================== */
 
 
-header{display: flex;
+@media screen and (max-width: 1200px) {
+    menu {
+        display: none;
+    }
+}
+
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+#burgercontainer {
+    @media screen and (max-width: 1200px) {
+        display: block;
+    }
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    transition: 0.3s;
+}
+
+.contribution {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+
+}
+
+.rowContribution {
+    padding: 10px 20px;
+}
+
+.boiteLegende {
+
+    p {
+        margin: 0px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+
+
+    }
+
+
+}
+
+.rowLegende {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.rowContribution {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ligneVerte {
+
+    width: 30px;
+    height: 5px;
+    background-color: #7BC170;
+}
+
+.ligneRouge {
+
+    width: 30px;
+    height: 5px;
+    background-color: #ba61e3;
+}
+
+header {
+    display: flex;
     margin-left: auto;
     width: 100%;
     height: 59px;
     background-color: #7d718c;
     align-items: center;
-justify-content: space-between;
+    justify-content: space-between;
 }
 
-.tableau{
-    color: white;
-  font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    margin-left: 140px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-.recherche{
-    width: 375px;
-    height: 27px;
-    background-color: white;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    padding-right: 10px;
-    i{
-        font-size: 18px;
-        color: #9581A1;
-        opacity: 65%;
-    }
-
-}
-
-.navDroite{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-    margin-right: 100px;
-
-}
-
-.iconf{
-    color: white;
 
 
 
-}
-.iconProfile{
 
-    font-size: 25px;
-    color: white;
-}
+
+
+
+
+
 
 body {
     display: grid;
     grid-template-columns: 15% 85%;
-margin: 0px;
+    margin: 0px;
     padding: 0px;
     background-color: #ededed;
 }
-.logoSection{
 
 
-    background-color: #7d718c;
-    margin: 0px;
-    padding: 0px;
-    width: 99.5%;
-    height: 59px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
 
-}
-menu{
-    margin: 0px;
-    padding: 0px;
-}
 
 
-.userSection{
-    background-color: #7d718c;
-    margin: 0px;
-    padding: 0px;
-    width: 99.5%;
-    height: 50px;
-    margin-top: 2px;
-    display: flex;
-    align-items: center;
-gap: 15px;
 
 
-    h5{color: white;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        margin-top: 5px}
-
-}
-.userSectionContenu{
-display: flex;
-    gap:10px;
-    margin-left: 40px;
-    align-items: center;
-    i{
-        font-size: 26px;
-    }
-    h5{
-        font-size: 20px;
-
-    }
-
-}
-.graphContributeurs{
+.graphContributeurs {
 
     margin-bottom: -20px;
     margin-left: 65px;
 }
-.menuSectionA{
-    background-color: #7d718c;
-    margin: 0px;
-    padding: 0px;
-    width: 99.5%;
-    height: 96.9%;
-    margin-top: 2px;
-    display: flex;
-
-    gap: 15px;
-    justify-content: center;
-
-    h5{color: white;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        margin-top: 4px;
-        font-size: 20px;
-       }
-    i{
-        font-size: 24px;
 
 
-    }
-
-}
-.menuSectionB{
+.menuSectionB {
     background-color: #7d718c;
     margin: 0px;
     padding: 0px;
@@ -162,13 +142,15 @@ display: flex;
     gap: 15px;
     justify-content: center;
 
-    h5{color: white;
+    h5 {
+        color: white;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         margin-top: 4px;
         font-size: 20px;
     }
-    i{
+
+    i {
         font-size: 24px;
 
 
@@ -176,85 +158,45 @@ display: flex;
 
 }
 
-.boiteItems{
-margin-top: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-
-
-}
-
-.menuItem{
-    display: grid;
-    grid-template-columns: 10% 90%;
-    gap: 20px;
-
- align-items: center;
-    i{color: white;
-        font-size: 20px;
-
-    }
-    margin-top: 15px;
-
-    .selectedItem{
-
-       font-weight: 500;
-        font-size: 23px;
-
-
-    }
-    h5{
-
-        font-family: 'Roboto', sans-serif;
-        font-weight: initial;
-    }
-  
-
-
-}
 
 
 
-.menuItem:hover{
+.menuItem:hover {
     cursor: pointer;
 }
-.droite{
+
+.droite {
 
     margin-left: -5px;
 
 }
 
 
-.iconfleche{
+.iconfleche {
 
 
     color: white;
 }
-.boiteLogo{
 
-    margin-left: 20px;
-}
 
-.boiteFleche{
 
-    margin-right: 25px;
 
-}
 
-.dernierOption{
+.dernierOption {
 
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 50px;
     margin-left: 80px;
-    h5{
+
+    h5 {
         font-size: large;
 
     }
 }
-.boiteElement{
+
+.boiteElement {
 
 
     width: 311px;
@@ -266,7 +208,7 @@ margin-top: 12px;
     margin-left: 80px;
 }
 
-.cercleIcon{
+.cercleIcon {
     margin-top: -25px;
 
     width: 50px;
@@ -274,42 +216,43 @@ margin-top: 12px;
     background-color: #bd93d1;
     border-radius: 30px;
     margin-left: 30px;
-bottom: 125px;
+    bottom: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    i{
+    i {
         font-size: 24px;
         color: white;
 
     }
 
 
-
-
 }
 
-.boiteInfo{
+.boiteInfo {
 
     display: flex;
 }
-.boiteTitre{
-  margin-top: 5px;
- margin-left: 25px;
+
+.boiteTitre {
+    margin-top: 5px;
+    margin-left: 25px;
     gap: 5px;
-    h4{
+
+    h4 {
         font-size: 20px;
     }
 
 
 }
 
-.infoRow{
+.infoRow {
 
     display: flex;
     align-items: center;
-    .cardNumber{
+
+    .cardNumber {
         font-family: 'Roboto', sans-serif;
         color: #5E5CD3;
         font-weight: 500;
@@ -317,30 +260,31 @@ bottom: 125px;
         font-size: 26px;
 
 
-
-
     }
 }
 
-.cardTitle{
+.cardTitle {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 
     font-size: 200px;
 }
-.priceNumber{
 
-    color:#7CC38C;
+.priceNumber {
+
+    color: #7CC38C;
     font-weight: bold;
 
 
 }
-.priceRedNumber{
+
+.priceRedNumber {
     font-weight: bold;
     color: red;
 
 }
-.avancement{
+
+.avancement {
 
     width: 46px;
     height: 13px;
@@ -349,7 +293,8 @@ bottom: 125px;
     margin-top: -13px;
 
 }
-.barreAvancement{
+
+.barreAvancement {
 
     width: 95px;
     height: 13px;
@@ -359,22 +304,29 @@ bottom: 125px;
     margin-right: 10px;
 
 }
-.rowInfo{
+
+.rowInfo {
     display: flex;
 }
 
-.infoBottom{
+.infoBottom {
     width: 80%;
-margin-left: 25px;
+    margin-left: 25px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     margin-top: 15px;
-    font-weight:initial;
+    font-weight: initial;
     color: #B7ABC1;
 
 }
+.imgGraph{
 
-.boiteGraphContribution{
+    max-height: 86%;
+    max-width: 100%;
+ margin-left: 22px;
+}
+
+.boiteGraphContribution {
 
     width: 1095px;
     height: 532px;
@@ -385,13 +337,15 @@ margin-left: 25px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 
+
 }
-.boiteProvenance{
+
+.boiteProvenance {
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
 
-width: 311px;
+    width: 311px;
     height: 533px;
     background-color: white;
     margin-top: 50px;
@@ -400,17 +354,18 @@ width: 311px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
-.secondRow{
+
+.secondRow {
 
     display: flex;
 }
 
-.graphiqueCont{
+.graphiqueCont {
 
- margin-top: 5px;
+    margin-top: 5px;
 }
 
-.provenanceTitle{
+.provenanceTitle {
 
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -420,7 +375,8 @@ width: 311px;
 
 
 }
-.plateformTexte{
+
+.plateformTexte {
 
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -429,18 +385,19 @@ width: 311px;
 }
 
 
-.boitePlateforme{
+.boitePlateforme {
 
     display: grid;
     grid-template-columns: 30% 70%;
 
-gap: 30px;
+    gap: 30px;
 
     margin-top: 35px;
     width: 80%;
 
 }
-.boiteProgression{
+
+.boiteProgression {
 
     height: 12px;
     width: 135px;
@@ -452,7 +409,8 @@ gap: 30px;
     border-color: #A278B6;
 
 }
-.Progression{
+
+.Progression {
 
     border-radius: 2px 0px 0px 2px;
     margin-left: -2px;
@@ -462,7 +420,7 @@ gap: 30px;
     margin-top: -2px;
 }
 
-.boiteProgressionInsta{
+.boiteProgressionInsta {
     height: 12px;
     width: 135px;
     background-color: #ffffff;
@@ -473,7 +431,8 @@ gap: 30px;
     border-color: #A278B6;
 
 }
-.ProgressionInsta{
+
+.ProgressionInsta {
 
 
     height: 12px;
@@ -482,7 +441,8 @@ gap: 30px;
     margin-top: -1px;
     margin-left: -1px;
 }
-.boiteProgressionYT{
+
+.boiteProgressionYT {
     height: 12px;
     width: 135px;
     background-color: #ffffff;
@@ -493,7 +453,8 @@ gap: 30px;
     border-color: #A278B6;
 
 }
-.ProgressionYT{
+
+.ProgressionYT {
 
 
     height: 12px;
@@ -502,7 +463,8 @@ gap: 30px;
     margin-top: -1px;
     margin-left: -1px;
 }
-.boiteProgressionLD{
+
+.boiteProgressionLD {
     height: 12px;
     width: 135px;
     background-color: #ffffff;
@@ -513,7 +475,8 @@ gap: 30px;
     border-color: #A278B6;
 
 }
-.ProgressionLD{
+
+.ProgressionLD {
 
 
     height: 11px;
@@ -522,7 +485,8 @@ gap: 30px;
     margin-top: -1px;
     margin-left: -1px;
 }
-.boiteProgressionG{
+
+.boiteProgressionG {
     height: 12px;
     width: 135px;
     background-color: #ffffff;
@@ -533,7 +497,8 @@ gap: 30px;
     border-color: #A278B6;
 
 }
-.ProgressionG{
+
+.ProgressionG {
 
 
     height: 11px;
@@ -542,7 +507,8 @@ gap: 30px;
     margin-top: -1px;
     margin-left: -1px;
 }
-.boiteProgressionTT{
+
+.boiteProgressionTT {
     height: 12px;
     width: 135px;
     background-color: #ffffff;
@@ -553,7 +519,8 @@ gap: 30px;
     border-color: #A278B6;
 
 }
-.ProgressionTT{
+
+.ProgressionTT {
 
 
     height: 11px;
@@ -562,7 +529,8 @@ gap: 30px;
     margin-top: -1px;
     margin-left: -1px;
 }
-.boiteProgressionP{
+
+.boiteProgressionP {
     height: 12px;
     width: 135px;
     background-color: #ffffff;
@@ -573,7 +541,8 @@ gap: 30px;
     border-color: #A278B6;
 
 }
-.ProgressionP{
+
+.ProgressionP {
 
 
     height: 11px;
@@ -582,7 +551,8 @@ gap: 30px;
     margin-top: -1px;
     margin-left: -1px;
 }
-.boiteProgressionTW{
+
+.boiteProgressionTW {
     height: 12px;
     width: 135px;
     background-color: #ffffff;
@@ -593,7 +563,8 @@ gap: 30px;
     border-color: #A278B6;
 
 }
-.ProgressionTW{
+
+.ProgressionTW {
 
 
     height: 11px;
@@ -602,8 +573,12 @@ gap: 30px;
     margin-top: -1px;
     margin-left: -1px;
 }
-.thirdRow{display: flex}
-.ContributionJour{
+
+.thirdRow {
+    display: flex
+}
+
+.ContributionJour {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -617,11 +592,13 @@ gap: 30px;
     margin-left: 80px;
 
 }
-.graphBoxContent{
+
+.graphBoxContent {
     margin: 0 auto;
 
 }
-.ProduitVendu{
+
+.ProduitVendu {
     height: 487px;
     width: 44%;
     background-color: white;
@@ -630,7 +607,7 @@ gap: 30px;
     margin-top: 40px;
     margin-left: 60px;
 
-    h4{
+    h4 {
         font-size: 21px;
         font-family: 'Roboto', sans-serif;
         margin-bottom: 3px;
@@ -638,7 +615,7 @@ gap: 30px;
     }
 }
 
-.graphTitle{
+.graphTitle {
 
     font-family: 'Roboto', sans-serif;
     font-size: 25px;

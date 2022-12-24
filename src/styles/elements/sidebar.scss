@@ -1,0 +1,137 @@
+menu {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logoSection {
+
+
+    background-color: #7d718c;
+    margin: 0px;
+    padding: 0px;
+    width: 99.5%;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .boiteLogo {
+
+        margin-left: 20px;
+    }
+
+
+    .boiteFleche {
+
+        margin-right: 25px;
+
+    }
+
+
+}
+
+.userSection {
+    background-color: #7d718c;
+    margin: 0px;
+    padding: 0px;
+    width: 99.5%;
+    height: 50px;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+
+    h5 {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        margin-top: 5px
+    }
+
+}
+
+.userSectionContenu {
+    display: flex;
+    gap: 10px;
+    margin-left: 40px;
+    align-items: center;
+
+    i {
+        font-size: 26px;
+    }
+
+    h5 {
+        font-size: 20px;
+
+    }
+
+}
+
+.menuSectionA {
+    background-color: #7d718c;
+    margin: 0px;
+    padding: 0px;
+    width: 99.5%;
+    height: 96.9%;
+    margin-top: 2px;
+    display: flex;
+
+    gap: 15px;
+    justify-content: center;
+
+    h5 {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        margin-top: 4px;
+        font-size: 20px;
+    }
+
+    i {
+        font-size: 24px;
+
+
+    }
+
+}
+
+.boiteItems {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+
+}
+
+.menuItem {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    gap: 20px;
+
+    align-items: center;
+
+    i {
+        color: white;
+        font-size: 20px;
+
+    }
+
+    margin-top: 15px;
+
+    .selectedItem {
+
+        font-weight: 500;
+        font-size: 23px;
+
+
+    }
+
+    h5 {
+
+        font-family: 'Roboto', sans-serif;
+        font-weight: initial;
+    }
+
+
+}
